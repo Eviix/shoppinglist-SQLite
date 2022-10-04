@@ -65,7 +65,7 @@ export default function App() {
       <Button onPress={saveItem} title="Save" /> 
       <Text style={{marginTop: 30, fontSize: 20}}>Shopping list</Text>
       <FlatList 
-        style={{marginLeft : "5%"}}
+
         keyExtractor={item => item.id.toString()} 
         renderItem={({item}) => 
         <View style={styles.listcontainer}>
@@ -80,7 +80,8 @@ export default function App() {
 
 const styles = StyleSheet.create({
  container: {
-  flex: 1,
+  marginTop: 50,
+  flex: 4,
   backgroundColor: '#fff',
   alignItems: 'center',
   justifyContent: 'center',
